@@ -30,7 +30,9 @@ app.use(express.json());
 
 socketIo(io);
 
-
+app.get("/",()=>{
+  console.log("Live");
+})
 app.use("/api/users", userRouter);
 app.use("/api/groups", groupRouter);
 app.use("/api/messages", messageRouter);
