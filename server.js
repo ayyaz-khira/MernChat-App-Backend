@@ -16,7 +16,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: ["http://localhost:5173","https://precious-pie-fe640e.netlify.app/"],
+    origin: ["http://localhost:5173","https://precious-pie-fe640e.netlify.app"],
     methods: ["GET", "POST"],
     credentials: true,
   },
