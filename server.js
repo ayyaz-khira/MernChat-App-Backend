@@ -16,7 +16,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: ["http://localhost:5173","https://monumental-chebakia-4132ca.netlify.app/"],
+    origin: ["http://localhost:5173","https://precious-pie-fe640e.netlify.app/"],
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -31,7 +31,7 @@ app.use(express.json());
 socketIo(io);
 
 app.get("/",(req,res)=>{
-  res.send("Live");
+  res.send("The Project is Live");
 })
 app.use("/api/users", userRouter);
 app.use("/api/groups", groupRouter);
