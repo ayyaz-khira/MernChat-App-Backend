@@ -30,7 +30,7 @@ app.use(express.json());
 
 socketIo(io);
 
-app.get("/",()=>{
+app.get("/",(req,res)=>{
   res.send("Live");
 })
 app.use("/api/users", userRouter);
