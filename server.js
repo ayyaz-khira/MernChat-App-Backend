@@ -38,7 +38,7 @@ app.use("/api/groups", groupRouter);
 app.use("/api/messages", messageRouter);
 
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT;
 server.listen(PORT,'0.0.0.0', ()=>console.log("Server is up and running on port", PORT));
 
 server.on("error", (err) => {
