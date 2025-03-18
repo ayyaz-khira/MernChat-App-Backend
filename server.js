@@ -31,7 +31,7 @@ app.use(express.json());
 socketIo(io);
 
 app.get("/",()=>{
-  console.log("Live");
+  res.send("Live");
 })
 app.use("/api/users", userRouter);
 app.use("/api/groups", groupRouter);
